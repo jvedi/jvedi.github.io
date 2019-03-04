@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>管理多个Git账户 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="[TOC] 前言在搭建 Hexo 博客的时候，由于本地已经有一个自建的 Git 仓库在使用中，需要再增加一个 Github 的仓库，就出现了管理多个 Git 仓库账户的需求。网上大部分使用 ssh-keygen 生成默认秘钥的方式就不能满足需求了，需要手动创建多个秘钥，并进行管理。所以准备记录以下这个过程。最后会说明在 Hexo 中使用自定义秘钥账户进行发布博客的方法。 解决方法 ssh-keyg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="管理多个Git账户">
+<meta property="og:url" content="http://yoursite.com/2019/03/04/管理多个Git账户/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 前言在搭建 Hexo 博客的时候，由于本地已经有一个自建的 Git 仓库在使用中，需要再增加一个 Github 的仓库，就出现了管理多个 Git 仓库账户的需求。网上大部分使用 ssh-keygen 生成默认秘钥的方式就不能满足需求了，需要手动创建多个秘钥，并进行管理。所以准备记录以下这个过程。最后会说明在 Hexo 中使用自定义秘钥账户进行发布博客的方法。 解决方法 ssh-keyg">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-04T10:37:45.191Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="管理多个Git账户">
+<meta name="twitter:description" content="[TOC] 前言在搭建 Hexo 博客的时候，由于本地已经有一个自建的 Git 仓库在使用中，需要再增加一个 Github 的仓库，就出现了管理多个 Git 仓库账户的需求。网上大部分使用 ssh-keygen 生成默认秘钥的方式就不能满足需求了，需要手动创建多个秘钥，并进行管理。所以准备记录以下这个过程。最后会说明在 Hexo 中使用自定义秘钥账户进行发布博客的方法。 解决方法 ssh-keyg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-管理多个Git账户" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-管理多个Git账户" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/04/管理多个Git账户/" class="article-date">
   <time datetime="2019-03-04T10:37:15.000Z" itemprop="datePublished">2019-03-04</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/04/管理多个Git账户/">管理多个Git账户</a>
+    <h1 class="article-title" itemprop="name">
+      管理多个Git账户
     </h1>
   
 
@@ -174,92 +176,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/04/my-first-blog/" class="article-date">
-  <time datetime="2019-03-04T03:10:13.000Z" itemprop="datePublished">2019-03-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/04/my-first-blog/">my_first_blog</a>
-    </h1>
+    <a href="/2019/03/04/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">my_first_blog</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/my-first-blog/" data-id="cjsu7nthg00021zl80ws7dcwd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/04/hello-world/" class="article-date">
-  <time datetime="2019-03-04T03:09:36.561Z" itemprop="datePublished">2019-03-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/hello-world/" data-id="cjsu7nth400011zl8wn040ktc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
