@@ -62,6 +62,65 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-npm卡住的问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/06/npm卡住的问题/" class="article-date">
+  <time datetime="2019-03-06T07:49:07.000Z" itemprop="datePublished">2019-03-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/06/npm卡住的问题/">npm卡住的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一、查看卡住位置</p>
+<p>   使用命令npm install –verbose来替代<br>   例如：<br>   npm install -g browser-sync<br>   变<br>   npm install –verbose -g browser-sync</p>
+<p>二、安装 nrm 源管理工具</p>
+<ol>
+<li>安装<br>npm install -g nrm</li>
+<li><p>命令<br>① nrm ls </p>
+<p>列出所有可用源：</p>
+</li>
+</ol>
+<ul>
+<li><p>npm —- <a href="https://registry.npmjs.org/" target="_blank" rel="noopener">https://registry.npmjs.org/</a><br>cnpm — <a href="http://r.cnpmjs.org/" target="_blank" rel="noopener">http://r.cnpmjs.org/</a><br>taobao - <a href="https://registry.npm.taobao.org/" target="_blank" rel="noopener">https://registry.npm.taobao.org/</a><br>nj —– <a href="https://registry.nodejitsu.com/" target="_blank" rel="noopener">https://registry.nodejitsu.com/</a><br>rednpm - <a href="http://registry.mirror.cqupt.edu.cn/" target="_blank" rel="noopener">http://registry.mirror.cqupt.edu.cn/</a><br>npmMirror  <a href="https://skimdb.npmjs.com/registry/" target="_blank" rel="noopener">https://skimdb.npmjs.com/registry/</a><br>edunpm - <a href="http://registry.enpmjs.org/" target="_blank" rel="noopener">http://registry.enpmjs.org/</a></p>
+<p>② nrm use xxx<br>  切换源</p>
+<p>  例如将源切换到 taobao : nrm use taobao<br>  此时再用 npm install 时，使用的就已经是 taobao 的源了。</p>
+<p>  切换后，也可以用 nrm list 方便的查看当前使用源:<br>  nrm list<br>npm —- <a href="https://registry.npmjs.org/" target="_blank" rel="noopener">https://registry.npmjs.org/</a><br>cnpm — <a href="http://r.cnpmjs.org/" target="_blank" rel="noopener">http://r.cnpmjs.org/</a></p>
+<ul>
+<li>taobao - <a href="https://registry.npm.taobao.org/" target="_blank" rel="noopener">https://registry.npm.taobao.org/</a><br>nj —– <a href="https://registry.nodejitsu.com/" target="_blank" rel="noopener">https://registry.nodejitsu.com/</a><br>rednpm - <a href="http://registry.mirror.cqupt.edu.cn/" target="_blank" rel="noopener">http://registry.mirror.cqupt.edu.cn/</a><br>npmMirror  <a href="https://skimdb.npmjs.com/registry/" target="_blank" rel="noopener">https://skimdb.npmjs.com/registry/</a><br>edunpm - <a href="http://registry.enpmjs.org/" target="_blank" rel="noopener">http://registry.enpmjs.org/</a></li>
+</ul>
+</li>
+</ul>
+<p>三、再次进行安装</p>
+<p>经过上述两步后，切换到合适的源，再进行安装，就能够用新的优质源顺利安装了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/06/npm卡住的问题/" data-id="cjswwj8n70000o2l8k6hkuhdw" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm-卡住/">npm 卡住</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-管理多个Git账户" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/04/管理多个Git账户/" class="article-date">
@@ -168,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/管理多个Git账户/" data-id="cjsu7po9d00029ml8eqkygqyt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/04/管理多个Git账户/" data-id="cjswwj8ni0005o2l800kzlbkx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -204,7 +263,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/my-first-blog/" data-id="cjsu7po9b00019ml88b8fq8eo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/04/my-first-blog/" data-id="cjswwj8ni0004o2l8jahr9999" class="article-share-link">Share</a>
       
       
     </footer>
@@ -249,7 +308,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/hello-world/" data-id="cjsu7po9800009ml810job5ea" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/04/hello-world/" data-id="cjswwj8na0001o2l88e2sqc6d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -269,9 +328,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm-卡住/">npm 卡住</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/npm-卡住/" style="font-size: 10px;">npm 卡住</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -288,6 +361,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/03/06/npm卡住的问题/">npm卡住的问题</a>
+          </li>
         
           <li>
             <a href="/2019/03/04/管理多个Git账户/">管理多个Git账户</a>
