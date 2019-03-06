@@ -62,6 +62,54 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Ubuntu环境变量设置位置汇总" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/06/Ubuntu环境变量设置位置汇总/" class="article-date">
+  <time datetime="2019-03-06T07:51:57.000Z" itemprop="datePublished">2019-03-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/06/Ubuntu环境变量设置位置汇总/">Ubuntu环境变量设置位置汇总</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>ubuntu 环境变量配置：</p>
+<p>因在开发编译时是找不到命令，原因是将路径添加到环境变量，如何设置环境变量，搜索一下，找到以下关于环境变量设置的几个文件及何时执行。</p>
+<p>首先要认识几个和环境变量有关的文件：</p>
+<p>/etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置；</p>
+<p>/etc/environment —— 在登录时操作系统使用的第二个文件,系统在读取你自己的profile前,设置环境文件的环境变量；</p>
+<p>/etc/bashrc —— 为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取；</p>
+<p>~/.profile —— 每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行一次！默认情况下,它设置一些环境变量,执行用户的.bashrc文件；</p>
+<p>~/.bashrc —— 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取；</p>
+<p>认识以上5个文件的作用之后，知道该怎么设置了。我选择第2种方式，修改/etc/environment 文件</p>
+<p>打开终端 输入  vim /etc/environment 回车（ 用vim来编辑，没有安装vim的可以用gedit来编辑） </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/06/Ubuntu环境变量设置位置汇总/" data-id="cjswwn3oi00005hl8s84ko11z" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu-环境变量/">Ubuntu,环境变量</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-npm卡住的问题" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/06/npm卡住的问题/" class="article-date">
@@ -109,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/06/npm卡住的问题/" data-id="cjswwj8n70000o2l8k6hkuhdw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/06/npm卡住的问题/" data-id="cjswwn3op00045hl8nxhfnbw8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm-卡住/">npm 卡住</a></li></ul>
@@ -227,7 +275,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/管理多个Git账户/" data-id="cjswwj8ni0005o2l800kzlbkx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/04/管理多个Git账户/" data-id="cjswwn3oq00055hl8ocuiky6s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -263,7 +311,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/my-first-blog/" data-id="cjswwj8ni0004o2l8jahr9999" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/04/my-first-blog/" data-id="cjswwn3om00015hl8pu1anstw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -308,7 +356,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/hello-world/" data-id="cjswwj8na0001o2l88e2sqc6d" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/04/hello-world/" data-id="cjswwn3oo00035hl8kmi60m85" class="article-share-link">Share</a>
       
       
     </footer>
@@ -331,7 +379,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm-卡住/">npm 卡住</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu-环境变量/">Ubuntu,环境变量</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm-卡住/">npm 卡住</a></li></ul>
     </div>
   </div>
 
@@ -341,7 +389,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/npm-卡住/" style="font-size: 10px;">npm 卡住</a>
+      <a href="/tags/Ubuntu-环境变量/" style="font-size: 10px;">Ubuntu,环境变量</a> <a href="/tags/npm-卡住/" style="font-size: 10px;">npm 卡住</a>
     </div>
   </div>
 
@@ -361,6 +409,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/03/06/Ubuntu环境变量设置位置汇总/">Ubuntu环境变量设置位置汇总</a>
+          </li>
         
           <li>
             <a href="/2019/03/06/npm卡住的问题/">npm卡住的问题</a>

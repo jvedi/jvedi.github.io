@@ -5,19 +5,20 @@
   
 
   
-  <title>Hello World | Hexo</title>
+  <title>Ubuntu环境变量设置位置汇总 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="ubuntu 环境变量配置： 因在开发编译时是找不到命令，原因是将路径添加到环境变量，如何设置环境变量，搜索一下，找到以下关于环境变量设置的几个文件及何时执行。 首先要认识几个和环境变量有关的文件： /etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置； /etc/environm">
+<meta name="keywords" content="Ubuntu,环境变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/03/04/hello-world/index.html">
+<meta property="og:title" content="Ubuntu环境变量设置位置汇总">
+<meta property="og:url" content="http://yoursite.com/2019/03/06/Ubuntu环境变量设置位置汇总/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="ubuntu 环境变量配置： 因在开发编译时是找不到命令，原因是将路径添加到环境变量，如何设置环境变量，搜索一下，找到以下关于环境变量设置的几个文件及何时执行。 首先要认识几个和环境变量有关的文件： /etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置； /etc/environm">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-04T03:09:36.561Z">
+<meta property="og:updated_time" content="2019-03-06T07:52:42.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Ubuntu环境变量设置位置汇总">
+<meta name="twitter:description" content="ubuntu 环境变量配置： 因在开发编译时是找不到命令，原因是将路径添加到环境变量，如何设置环境变量，搜索一下，找到以下关于环境变量设置的几个文件及何时执行。 首先要认识几个和环境变量有关的文件： /etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置； /etc/environm">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +65,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Ubuntu环境变量设置位置汇总" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/03/04/hello-world/" class="article-date">
-  <time datetime="2019-03-04T03:09:36.561Z" itemprop="datePublished">2019-03-04</time>
+    <a href="/2019/03/06/Ubuntu环境变量设置位置汇总/" class="article-date">
+  <time datetime="2019-03-06T07:51:57.000Z" itemprop="datePublished">2019-03-06</time>
 </a>
     
   </div>
@@ -78,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Ubuntu环境变量设置位置汇总
     </h1>
   
 
@@ -86,37 +87,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>ubuntu 环境变量配置：</p>
+<p>因在开发编译时是找不到命令，原因是将路径添加到环境变量，如何设置环境变量，搜索一下，找到以下关于环境变量设置的几个文件及何时执行。</p>
+<p>首先要认识几个和环境变量有关的文件：</p>
+<p>/etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置；</p>
+<p>/etc/environment —— 在登录时操作系统使用的第二个文件,系统在读取你自己的profile前,设置环境文件的环境变量；</p>
+<p>/etc/bashrc —— 为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取；</p>
+<p>~/.profile —— 每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行一次！默认情况下,它设置一些环境变量,执行用户的.bashrc文件；</p>
+<p>~/.bashrc —— 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取；</p>
+<p>认识以上5个文件的作用之后，知道该怎么设置了。我选择第2种方式，修改/etc/environment 文件</p>
+<p>打开终端 输入  vim /etc/environment 回车（ 用vim来编辑，没有安装vim的可以用gedit来编辑） </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/04/hello-world/" data-id="cjswwn3oo00035hl8kmi60m85" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/06/Ubuntu环境变量设置位置汇总/" data-id="cjswwn3oi00005hl8s84ko11z" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu-环境变量/">Ubuntu,环境变量</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2019/03/04/my-first-blog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          my_first_blog
-        
-      </div>
-    </a>
   
+    <a href="/2019/03/06/npm卡住的问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">npm卡住的问题</div>
+    </a>
   
 </nav>
 
