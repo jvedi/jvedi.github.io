@@ -5,19 +5,20 @@
   
 
   
-  <title>sdkmanager简单使用 | HaoQiang</title>
+  <title>aapt命令-查看apk包信息 | HaoQiang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="sdkmanager 工具位置1../Android/Sdk/tools/bin sdkmanager 最全命令帮助1./sdkmanager --help sdkmanager 常用命令sdkmanager 命令行确认许可1./sdkmanager --licenses sdkmanager 获取更新列表1./sdkmanager --list">
+  <meta name="description" content="1. aapt位置1/Android/Sdk/build-tools/27.0.3/aapt  其中 27.0.3 是 SDK版本号，可以自行替换  2. 使用 appt 查看未安装的 apk 信息1./aapt dump badging &amp;apos;xxx.apk&amp;apos;">
+<meta name="keywords" content="aapt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sdkmanager简单使用">
-<meta property="og:url" content="http://yoursite.com/2019/03/06/sdkmanager简单使用/index.html">
+<meta property="og:title" content="aapt命令-查看apk包信息">
+<meta property="og:url" content="http://yoursite.com/2019/03/08/aapt命令-查看apk包信息/index.html">
 <meta property="og:site_name" content="HaoQiang">
-<meta property="og:description" content="sdkmanager 工具位置1../Android/Sdk/tools/bin sdkmanager 最全命令帮助1./sdkmanager --help sdkmanager 常用命令sdkmanager 命令行确认许可1./sdkmanager --licenses sdkmanager 获取更新列表1./sdkmanager --list">
+<meta property="og:description" content="1. aapt位置1/Android/Sdk/build-tools/27.0.3/aapt  其中 27.0.3 是 SDK版本号，可以自行替换  2. 使用 appt 查看未安装的 apk 信息1./aapt dump badging &amp;apos;xxx.apk&amp;apos;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-06T10:27:00.873Z">
+<meta property="og:updated_time" content="2019-03-08T08:15:58.395Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sdkmanager简单使用">
-<meta name="twitter:description" content="sdkmanager 工具位置1../Android/Sdk/tools/bin sdkmanager 最全命令帮助1./sdkmanager --help sdkmanager 常用命令sdkmanager 命令行确认许可1./sdkmanager --licenses sdkmanager 获取更新列表1./sdkmanager --list">
+<meta name="twitter:title" content="aapt命令-查看apk包信息">
+<meta name="twitter:description" content="1. aapt位置1/Android/Sdk/build-tools/27.0.3/aapt  其中 27.0.3 是 SDK版本号，可以自行替换  2. 使用 appt 查看未安装的 apk 信息1./aapt dump badging &amp;apos;xxx.apk&amp;apos;">
   
     <link rel="alternate" href="/atom.xml" title="HaoQiang" type="application/atom+xml">
   
@@ -64,10 +65,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-sdkmanager简单使用" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-aapt命令-查看apk包信息" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/03/06/sdkmanager简单使用/" class="article-date">
-  <time datetime="2019-03-06T10:25:46.000Z" itemprop="datePublished">2019-03-06</time>
+    <a href="/2019/03/08/aapt命令-查看apk包信息/" class="article-date">
+  <time datetime="2019-03-08T08:13:56.000Z" itemprop="datePublished">2019-03-08</time>
 </a>
     
   </div>
@@ -78,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      sdkmanager简单使用
+      aapt命令-查看apk包信息
     </h1>
   
 
@@ -86,36 +87,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="sdkmanager-工具位置"><a href="#sdkmanager-工具位置" class="headerlink" title="sdkmanager 工具位置"></a>sdkmanager 工具位置</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">../Android/Sdk/tools/bin</span><br></pre></td></tr></table></figure>
-<h1 id="sdkmanager-最全命令帮助"><a href="#sdkmanager-最全命令帮助" class="headerlink" title="sdkmanager 最全命令帮助"></a>sdkmanager 最全命令帮助</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./sdkmanager --help</span><br></pre></td></tr></table></figure>
-<h1 id="sdkmanager-常用命令"><a href="#sdkmanager-常用命令" class="headerlink" title="sdkmanager 常用命令"></a>sdkmanager 常用命令</h1><h2 id="sdkmanager-命令行确认许可"><a href="#sdkmanager-命令行确认许可" class="headerlink" title="sdkmanager 命令行确认许可"></a>sdkmanager 命令行确认许可</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./sdkmanager --licenses</span><br></pre></td></tr></table></figure>
-<h2 id="sdkmanager-获取更新列表"><a href="#sdkmanager-获取更新列表" class="headerlink" title="sdkmanager 获取更新列表"></a>sdkmanager 获取更新列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./sdkmanager --list</span><br></pre></td></tr></table></figure>
+        <h2 id="1-aapt位置"><a href="#1-aapt位置" class="headerlink" title="1. aapt位置"></a>1. aapt位置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Android/Sdk/build-tools/27.0.3/aapt</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其中 27.0.3 是 SDK版本号，可以自行替换</p>
+</blockquote>
+<h2 id="2-使用-appt-查看未安装的-apk-信息"><a href="#2-使用-appt-查看未安装的-apk-信息" class="headerlink" title="2. 使用 appt 查看未安装的 apk 信息"></a>2. 使用 appt 查看未安装的 apk 信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./aapt dump badging &apos;xxx.apk&apos;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/06/sdkmanager简单使用/" data-id="cjszsct60000fl5l8z5dwnkz8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/08/aapt命令-查看apk包信息/" data-id="cjszsct5q0001l5l8vhcqgh3r" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aapt/">aapt</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2019/03/08/Jenkins/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Jenkins
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/06/SSH强制指定登录验证方式/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/03/08/Jenkins/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">SSH强制指定登录验证方式</div>
+      <div class="article-nav-title">Jenkins</div>
     </a>
   
 </nav>
